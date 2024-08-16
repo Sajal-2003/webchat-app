@@ -6,7 +6,7 @@ export const getUsers = async (req, res) => {
 
     const allUsers = await User.find({ _id: { $ne: loggedInUser } }).select(
       "-password"
-    );
+    ); // { _id: { $ne: loggedInUser }.select("-password") gives all the users expect the loggedin user and without the password
 
     res.status(200).json(allUsers);
   } catch (error) {

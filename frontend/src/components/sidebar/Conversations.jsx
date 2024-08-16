@@ -3,6 +3,7 @@ import Conversation from "./Conversation";
 import useGetConversations from "./../../hooks/useGetConversations";
 
 const Conversations = () => {
+  // here conversations are the users to show at the sidebar
   const { loading, conversations } = useGetConversations();
 
   return (

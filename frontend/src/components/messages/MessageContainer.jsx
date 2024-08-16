@@ -9,6 +9,7 @@ const MessageContainer = () => {
   const { selectedConversation, setSelectedConversation } = useConversation();
 
   useEffect(() => {
+    // clean up functon that refresh the setSelectedConversation to null if we logOut
     return () => setSelectedConversation(null);
   }, [setSelectedConversation]);
 

@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
     gender: {
       type: String,
       required: true,
-      enum: ["male", "female"],
+      enum: ["male", "female"], // when we have to choose only male and female two options s here ENUM is used
     },
     profilePic: {
       type: String,

@@ -90,7 +90,8 @@ const SignUp = () => {
               }
             />
           </div>
-
+          
+          
           <GenderCheckbox
             onCheckboxChange={handleCheckboxChange}
             selectedGender={inputs.gender}

@@ -10,6 +10,7 @@ const Messages = () => {
   const lastMessageRef = useRef();
 
   useEffect(() => {
+    // It is used for scrolling bar used in message container box
     setTimeout(() => {
       lastMessageRef.current?.scrollIntoView({ behavior: "smooth" });
     }, 100);
